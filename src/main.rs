@@ -8,9 +8,8 @@ fn main() {
         println!("Odd");
     }
     for i in 0..10 {
-        if i % 2 == 0 {
-            print!("{} ", i);
-        }
+        print!("{} ", i);
     }
+    // i is from 0 to 9 basically
     println!();
 }
