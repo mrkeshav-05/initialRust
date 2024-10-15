@@ -7,5 +7,10 @@ fn main() {
     } else {
         println!("Odd");
     }
+    for i in 0..10 {
+        if i % 2 == 0 {
+            print!("{} ", i);
+        }
+    }
     println!();
 }
