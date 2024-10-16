@@ -1,15 +1,17 @@
 fn main() {
-    print!("--- Conditional Loops ---");
-    let is_even = true;
-    println!();
-    if is_even {
-        println!("Even");
-    } else {
-        println!("Odd");
+    // Iteration over String
+    let sentance = String::from("My name is Keshav Thakur");
+    let first_word = get_first_word(sentance);
+    println!(); 
+}
+
+fn get_first_word(sentance: String) -> String {
+    let mut first_word = String::new();
+    for char in sentance.chars() {
+        if char == ' ' {
+            break;
+        }
+        first_word.push(char);
     }
-    for i in 0..10 {
-        print!("{} ", i);
-    }
-    // i is from 0 to 9 basically
-    println!();
+    first_word // this is for returing the first character
 }
